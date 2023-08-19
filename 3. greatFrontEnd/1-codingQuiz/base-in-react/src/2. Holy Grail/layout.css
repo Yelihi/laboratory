@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* 하단에 footer 를 고정시키고 싶을 때, 최상단 root div의 height 의 높이를 100vh로 조건을 건다. */
+/* 다만 이렇게 설정을 해도, 내부 내용물의 설정에서 height 가 고정이거나, 혹은 설정이 되어있지않다면 여전히 footer 는 화면 하단에 고정되지 않는다. */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 12px;
+  text-align: center;
+}
+
+header {
+  background-color: tomato;
+  height: 60px;
+}
+
+/* header 와 footer 사이에 공간을 꽉 채우기 위해서는 flex-grow 를 통해 최소 height 까지 설정된 높이까지 채워주어야 한다. */
+.columns {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* flex-shrink 를 통해서 설정해둔 width 100px 을 보존시키도록 하자. */
+nav {
+  background-color: coral;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+/* columns 의 flex-grow 를 통해 height 는 화면을 꽉 채웠지만, width 의 경우 element 크기에 종속되니 이를 위해 flex-grow 를 걸어준다 */
+main {
+  background-color: moccasin;
+  flex-grow: 1;
+}
+
+aside {
+  background-color: sandybrown;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+footer {
+  background-color: slategray;
+  height: 100px;
+}
