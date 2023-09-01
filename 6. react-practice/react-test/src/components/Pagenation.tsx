@@ -4,11 +4,17 @@ import "./style.css";
 
 import PageNumber from "./PageNumber";
 
+type PaginationProps = {
+  totalItems: number;
+  itemsPerPage: number;
+  pageNumberTestId?: string;
+};
+
 export default function Pagination({
   totalItems,
   itemsPerPage,
   pageNumberTestId,
-}) {
+}: PaginationProps) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const pageNumbers = [];
@@ -29,7 +35,7 @@ export default function Pagination({
     }
   };
 
-  const clickPageNumber = (number) => () => {
+  const clickPageNumber = (number: number) => () => {
     setCurrentPage(number);
   };
 
@@ -37,13 +43,13 @@ export default function Pagination({
     <nav>
       <ul className='pagination' key='pagination'>
         <li key='left'>
-          <Link
-            to='#'
+          <a
+            href='#'
             onClick={handlePrevClick}
             className={currentPage === 1 ? "disabled" : undefined}
           >
             Previous
-          </Link>
+          </a>
         </li>
         {pageNumbers.map((number) => (
           <PageNumber
@@ -54,15 +60,15 @@ export default function Pagination({
           />
         ))}
         <li key='right'>
-          <Link
-            to='#'
+          <a
+            href='#'
             onClick={handleNextClick}
             className={
               currentPage === pageNumbers.length ? "disabled" : undefined
             }
           >
             Next
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

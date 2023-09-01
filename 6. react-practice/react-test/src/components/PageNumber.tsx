@@ -1,11 +1,18 @@
 import React from "react";
 
+type PageNumberProps = {
+  pageNumberTestId?: string;
+  currentPage: number;
+  number: number;
+  clickPageNumber: () => void;
+};
+
 export default function PageNumber({
   pageNumberTestId,
   currentPage,
   number,
   clickPageNumber,
-}) {
+}: PageNumberProps) {
   return (
     <li key={number}>
       <span

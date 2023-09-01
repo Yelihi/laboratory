@@ -1,4 +1,6 @@
-function addTwoNumbers(a, b) {
+import "@testing-library/jest-dom/extend-expect";
+
+function addTwoNumbers(a: number, b: number) {
   return a + b;
 }
 
