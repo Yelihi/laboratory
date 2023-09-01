@@ -20,20 +20,26 @@ const renderPageNumberComponent = (number = 1, currentPage = 1) => {
 
 describe("PageNumber Component", () => {
   it("Component rendering", () => {
+    //Arrange
     const { pageNumber } = renderPageNumberComponent();
 
+    //Assert
     expect(pageNumber).toHaveTextContent(1);
   });
 
   it("현재 페이지이면 형광처리", () => {
+    //Arrange
     const { pageNumber } = renderPageNumberComponent(2, 2);
 
+    //Assert
     expect(pageNumber).toHaveClass("active");
   });
 
   it("현재 다른 페이지라면 형광처리하지 않음", () => {
+    //Arrange
     const { pageNumber } = renderPageNumberComponent(2, 3);
 
+    //Assert
     expect(pageNumber).not.toHaveClass("active");
   });
 });

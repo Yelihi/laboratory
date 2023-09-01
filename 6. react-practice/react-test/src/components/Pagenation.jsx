@@ -32,6 +32,10 @@ export default function Pagination({
     }
   };
 
+  const clickPageNumber = (number) => () => {
+    setCurrentPage(number);
+  };
+
   return (
     <nav>
       <ul className='pagination' key='pagination'>
@@ -49,6 +53,7 @@ export default function Pagination({
             pageNumberTestId={pageNumberTestId}
             currentPage={currentPage}
             number={number}
+            clickPageNumber={clickPageNumber(number)}
           />
         ))}
         <li key='right'>
