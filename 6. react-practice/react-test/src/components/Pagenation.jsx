@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import PageNumber from "./PageNumber";
@@ -36,13 +37,13 @@ export default function Pagination({
     <nav>
       <ul className='pagination' key='pagination'>
         <li key='left'>
-          <a
-            href='#'
+          <Link
+            to='#'
             onClick={handlePrevClick}
             className={currentPage === 1 ? "disabled" : undefined}
           >
             Previous
-          </a>
+          </Link>
         </li>
         {pageNumbers.map((number) => (
           <PageNumber
@@ -53,15 +54,15 @@ export default function Pagination({
           />
         ))}
         <li key='right'>
-          <a
-            href='#'
+          <Link
+            to='#'
             onClick={handleNextClick}
             className={
               currentPage === pageNumbers.length ? "disabled" : undefined
             }
           >
             Next
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
