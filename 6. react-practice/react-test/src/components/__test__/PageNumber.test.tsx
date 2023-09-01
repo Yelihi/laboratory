@@ -1,15 +1,18 @@
-import React from "react";
 import { screen, render } from "@testing-library/react";
 import PageNumber from "../PageNumber";
 
 const PAGE_NUMBER_TEST_ID = "page-number";
 
-const renderPageNumberComponent = (number = 1, currentPage = 1) => {
+const renderPageNumberComponent = (
+  number: number = 1,
+  currentPage: number = 1
+) => {
   render(
     <PageNumber
       pageNumberTestId={PAGE_NUMBER_TEST_ID}
       number={number}
       currentPage={currentPage}
+      clickPageNumber={() => {}}
     />
   );
 
@@ -24,7 +27,7 @@ describe("PageNumber Component", () => {
     const { pageNumber } = renderPageNumberComponent();
 
     //Assert
-    expect(pageNumber).toHaveTextContent(1);
+    expect(pageNumber).toHaveTextContent("1");
   });
 
   it("현재 페이지이면 형광처리", () => {
