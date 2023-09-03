@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Info, InfoContext } from "../pages/LoginForm";
 
 type TextFieldProps = {
-  value: string;
-  setValue: (v: string) => void;
   label: string;
+  source: keyof Info;
 };
 
-const TextField = ({ value, setValue, label }: TextFieldProps) => {
+const TextField = ({ label, source }: TextFieldProps) => {
+  const { value, setValue } = useContext(InfoContext);
   return (
     <>
       {label}
-      <input onChange={(e) => setValue(e.target.value)} value={value} />
+      <input
+        onChange={(e) => setValue({ ...value, [source]: e.target.value })}
+        value={value[source].toString()}
+      />
     </>
   );
 };
