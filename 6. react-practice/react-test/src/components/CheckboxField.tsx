@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Info, InfoContext } from "../pages/LoginForm";
 
 type CheckboxFieldProps = {
-  value: boolean;
-  setValue: (v: boolean) => void;
+  source: keyof Info;
   label: string;
 };
 
-const CheckboxField = ({ value, setValue, label }: CheckboxFieldProps) => {
+const CheckboxField = ({ label, source }: CheckboxFieldProps) => {
+  const { value, setValue } = useContext(InfoContext);
   return (
     <>
       {label}
       <input
         type='checkbox'
-        value={value.toString()}
-        onChange={(e) => setValue(e.target.checked)}
+        value={value[source].toString()}
+        onChange={(e) => setValue({ ...value, [source]: e.target.checked })}
       />
     </>
   );
