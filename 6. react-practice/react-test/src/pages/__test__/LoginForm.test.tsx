@@ -7,14 +7,19 @@ describe("LoginForm", () => {
     render(<LoginForm />);
 
     const nameLabel = screen.getByText(/이름/i);
-    const inputElement = screen.getByRole("textbox");
+    const inputNameElement = screen.getByTestId("name");
+
+    const passwordLabel = screen.getByText(/비밀번호/i);
+    const inputPasswordElement = screen.getByTestId("password");
     const checkbox = screen.getByRole("checkbox");
     const button = screen.getByRole("button");
     //Act
 
     //Assert
     expect(nameLabel).toBeInTheDocument();
-    expect(inputElement).toBeInTheDocument();
+    expect(inputNameElement).toBeInTheDocument();
+    expect(passwordLabel).toBeInTheDocument();
+    expect(inputPasswordElement).toBeInTheDocument();
     expect(checkbox).toBeInTheDocument();
     expect(button).toBeInTheDocument();
   });
@@ -25,14 +30,15 @@ describe("LoginForm", () => {
     window.alert = alertMock;
     //Arrange
     render(<LoginForm />);
-    const inputElement = screen.getByRole("textbox");
-    const checkboxElement = screen.getByRole("checkbox");
-    const buttonElement = screen.getByRole("button");
+    const inputNameElement = screen.getByTestId("name");
+
+    const checkbox = screen.getByRole("checkbox");
+    const button = screen.getByRole("button");
 
     //Act
-    fireEvent.change(inputElement, { target: { value: "wonik" } });
-    fireEvent.click(checkboxElement);
-    fireEvent.click(buttonElement);
+    fireEvent.change(inputNameElement, { target: { value: "wonik" } });
+    fireEvent.click(checkbox);
+    fireEvent.click(button);
 
     //Assert
     expect(alertMock).toHaveBeenCalledWith("name wonik");
@@ -42,14 +48,73 @@ describe("LoginForm", () => {
     window.alert = alertMock;
     //Arrange
     render(<LoginForm />);
-    const inputElement = screen.getByRole("textbox");
+    const inputNameElement = screen.getByTestId("name");
     const buttonElement = screen.getByRole("button");
 
     //Act
-    fireEvent.change(inputElement, { target: { value: "wonik" } });
+    fireEvent.change(inputNameElement, { target: { value: "wonik" } });
     fireEvent.click(buttonElement);
 
     //Assert
     expect(alertMock).not.toHaveBeenCalledWith("name wonik");
+  });
+
+  it("이름은 2자 미만 입력하면 에러가 출력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const inputNameElement = screen.getByTestId("name");
+    //Act
+    fireEvent.change(inputNameElement, { target: { value: "a" } });
+    //Assert
+    expect(screen.getByText("2자 이상 입력해주세요")).toBeInTheDocument();
+  });
+  it("이름을 6자 초과 입력하면 에러가 출력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const inputNameElement = screen.getByTestId("name");
+    //Act
+    fireEvent.change(inputNameElement, { target: { value: "aaaaaaa" } });
+    //Assert
+    expect(screen.getByText("6자 이하 입력해주세요")).toBeInTheDocument();
+  });
+  it("패스워드는 6자 이상, 12자 이하 입력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const inputPasswordElement = screen.getByTestId("password");
+    //Act
+    fireEvent.change(inputPasswordElement, { target: { value: "1234545" } });
+    //Assert
+    expect(screen.queryByText("6자 이상 입력해주세요")).toBeNull();
+    expect(screen.queryByText("12자 이하 입력해주세요")).toBeNull();
+  });
+  it("패스워드는 6자 미만 입력하면 에러가 출력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const inputPasswordElement = screen.getByTestId("password");
+    //Act
+    fireEvent.change(inputPasswordElement, { target: { value: "1235" } });
+    //Assert
+    expect(screen.getByText("6자 이상 입력해주세요")).toBeInTheDocument();
+  });
+  it("패스워드는 12자 초과 입력하면 에러가 출력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const inputPasswordElement = screen.getByTestId("password");
+    //Act
+    fireEvent.change(inputPasswordElement, {
+      target: { value: "1234567891234" },
+    });
+    //Assert
+    expect(screen.queryByText("12자 이하 입력해주세요")).toBeInTheDocument();
+  });
+  it("약관에 동의하지 않으면 에러가 출력되어야 함", () => {
+    //Arrange
+    render(<LoginForm />);
+    const checkbox = screen.getByRole("checkbox");
+    //Act
+    fireEvent.click(checkbox);
+    fireEvent.click(checkbox);
+    //Assert
+    expect(screen.getByText("반드시 체크해주세요")).toBeInTheDocument();
   });
 });

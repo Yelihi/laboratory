@@ -1,4 +1,5 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useReducer } from "react";
+import { minLength, maxLength, checked } from "../validation";
 
 import TextField from "../components/TextField";
 import Form from "../components/Form";
@@ -11,23 +12,39 @@ import CheckboxField from "../components/CheckboxField";
 export type Info = {
   name: string;
   confirm: boolean;
+  password: string;
+  checked: boolean;
 };
 
 const defaultInfo: Info = {
   name: "",
   confirm: false,
+  password: "",
+  checked: false,
 };
 
-export const InfoContext = createContext({
+export type PartialInfo = {
+  [key in keyof Info]: Record<key, Info[key]>;
+}[keyof Info];
+
+export const InfoContext = createContext<{
+  value: Info;
+  setValue: (v: PartialInfo) => void;
+}>({
   value: defaultInfo,
-  setValue: (v: any) => {},
+  setValue: (v) => {},
 });
 
 export default function LoginForm() {
-  const [info, setInfo] = useState<Info>({
-    name: "",
-    confirm: false,
-  });
+  const [info, setInfo] = useReducer(
+    (prevInfo: Info, partialInfo: PartialInfo) => {
+      return {
+        ...prevInfo,
+        ...partialInfo,
+      };
+    },
+    defaultInfo
+  );
 
   const onSubmit = () => {
     if (info.confirm) {
@@ -38,10 +55,20 @@ export default function LoginForm() {
   return (
     <InfoContext.Provider value={{ value: info, setValue: setInfo }}>
       <Form onSubmit={onSubmit}>
-        <TextField label='이름' source='name' />
+        <TextField
+          label='이름'
+          source='name'
+          validate={[minLength(2), maxLength(6)]}
+        />
+        <TextField
+          label='비밀번호'
+          source='password'
+          validate={[minLength(6), maxLength(12)]}
+        />
         <CheckboxField
           label='위 내용이 제출됩니다. 동의하십니까?'
           source='confirm'
+          validate={[checked]}
         />
       </Form>
     </InfoContext.Provider>
