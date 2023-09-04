@@ -23,16 +23,31 @@ const defaultInfo: Info = {
   checked: false,
 };
 
+const defaultErrorInfo = Object.keys(defaultInfo).reduce((acc, key) => {
+  acc[key as keyof ErrorInfo] = undefined;
+  return acc;
+}, {} as ErrorInfo);
+
+export type ErrorInfo = { [key in keyof Info]: string | undefined };
+
 export type PartialInfo = {
   [key in keyof Info]: Record<key, Info[key]>;
 }[keyof Info];
 
+export type PartialErrorInfo = {
+  [key in keyof ErrorInfo]: Record<key, ErrorInfo[key]>;
+}[keyof ErrorInfo];
+
 export const InfoContext = createContext<{
   value: Info;
   setValue: (v: PartialInfo) => void;
+  error: ErrorInfo;
+  setError: (v: PartialErrorInfo) => void;
 }>({
   value: defaultInfo,
   setValue: (v) => {},
+  error: defaultErrorInfo,
+  setError: (e) => {},
 });
 
 export default function LoginForm() {
@@ -46,14 +61,23 @@ export default function LoginForm() {
     defaultInfo
   );
 
+  const [error, setError] = useState<ErrorInfo>(defaultErrorInfo);
+
   const onSubmit = () => {
-    if (info.confirm) {
+    if (Object.values(error).every((e) => e === undefined)) {
       alert(`name ${info.name}`);
     }
   };
 
   return (
-    <InfoContext.Provider value={{ value: info, setValue: setInfo }}>
+    <InfoContext.Provider
+      value={{
+        value: info,
+        setValue: setInfo,
+        error,
+        setError: (e) => setError((prev) => ({ ...prev, ...e })),
+      }}
+    >
       <Form onSubmit={onSubmit}>
         <TextField
           label='이름'

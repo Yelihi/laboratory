@@ -1,7 +1,9 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Info, InfoContext, PartialInfo } from "../pages/LoginForm";
 
-type BooleanKey = {
+import useInput from "../hooks/useInput";
+
+export type BooleanKey = {
   [K in keyof Info]: Info[K] extends boolean ? K : never;
 }[keyof Info];
 
@@ -10,28 +12,15 @@ const CheckboxField: React.FC<{
   label: string;
   validate: any;
 }> = ({ label, source, validate }) => {
-  const { value, setValue } = useContext(InfoContext);
-  const [error, setError] = useState<string>();
-
-  useEffect(() => {
-    const errors: (string | undefined)[] = validate.map(
-      (validationFunc: any) => {
-        return validationFunc(value[source]);
-      }
-    );
-    const err = errors.find((error) => error);
-    setError(err);
-  }, [value[source]]);
+  const { error, value, onChange } = useInput({ source, validate });
 
   return (
     <>
       {label}
       <input
         type='checkbox'
-        value={value[source].toString()}
-        onChange={(e) =>
-          setValue({ [source]: e.target.checked } as PartialInfo)
-        }
+        value={value.toString()}
+        onChange={(e) => onChange(e.target.checked)}
       />
       {error && <p style={{ color: "crimson " }}>{error}</p>}
     </>
