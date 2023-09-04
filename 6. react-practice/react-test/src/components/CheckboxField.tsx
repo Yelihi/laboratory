@@ -1,21 +1,28 @@
-import React, { useContext } from "react";
-import { Info, InfoContext } from "../pages/LoginForm";
+import React, { useContext, useState, useEffect } from "react";
+import { Info, InfoContext, PartialInfo } from "../pages/LoginForm";
 
-type CheckboxFieldProps = {
-  source: keyof Info;
+import useInput from "../hooks/useInput";
+
+export type BooleanKey = {
+  [K in keyof Info]: Info[K] extends boolean ? K : never;
+}[keyof Info];
+
+const CheckboxField: React.FC<{
+  source: BooleanKey;
   label: string;
-};
+  validate: any;
+}> = ({ label, source, validate }) => {
+  const { error, value, onChange } = useInput({ source, validate });
 
-const CheckboxField = ({ label, source }: CheckboxFieldProps) => {
-  const { value, setValue } = useContext(InfoContext);
   return (
     <>
       {label}
       <input
         type='checkbox'
-        value={value[source].toString()}
-        onChange={(e) => setValue({ ...value, [source]: e.target.checked })}
+        value={value.toString()}
+        onChange={(e) => onChange(e.target.checked)}
       />
+      {error && <p style={{ color: "crimson " }}>{error}</p>}
     </>
   );
 };
