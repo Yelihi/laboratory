@@ -17,6 +17,7 @@ const useInput = ({ source, validate }: UseInput) => {
 
   useEffect(() => {
     const errors: ErrorInfo[] = validate.map((validationFunc: any) => {
+      // [minLength, maxLength]
       if (value[source] !== undefined) {
         return validationFunc(value[source]);
       }

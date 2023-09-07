@@ -15,7 +15,7 @@ type TextFieldProps = {
 };
 
 const TextField = ({ label, source, validate }: TextFieldProps) => {
-  const { error, value, onChange } = useInput({ source, validate });
+  const { error, value, onChange } = useInput({ source, validate }); // ex . minInput, maxInput
 
   return (
     <>
