@@ -1,6 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import PageNumber from "../PageNumber";
 
+
 const PAGE_NUMBER_TEST_ID = "page-number";
 
 const renderPageNumberComponent = (

@@ -107,7 +107,7 @@ describe("LoginForm", () => {
       target: { value: "1234567891234" },
     });
     //Assert
-    expect(screen.queryByText("12자 이하 입력해주세요")).toBeInTheDocument();
+    expect(screen.getByText("12자 이하 입력해주세요")).toBeInTheDocument();
   });
   it("약관에 동의하지 않으면 에러가 출력되어야 함", () => {
     //Arrange
