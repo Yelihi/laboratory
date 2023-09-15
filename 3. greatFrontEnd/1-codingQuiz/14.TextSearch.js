@@ -23,7 +23,7 @@ export default function textSearch1(string, query){
     return string;
   }
 
-  const boldChars = new Array(string.length).fill(1);
+  const boldChars = new Array(string.length).fill(0);
 
   for(let i = 0; i < string.length; ){
     const substr = string.slice(i, i + query.length);

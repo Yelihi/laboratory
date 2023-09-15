@@ -11,6 +11,7 @@ export default function textSearch(string, queries){
   const boldChars = new Array(string.length).fill(0);
 
   for(const query of queries){
+    if(query.trim() === '') continue
     for(let i = 0; i < string.length; ){
       const substr = string.slice(i, i + query.length);
       if(substr.toLowerCase() === query.toLowerCase()){
