@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+### 스레드
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+스레드란 실행 흐름의 최소단위이다. 예를 들면 카카오톡을 실행시킬 때, 메시지를 받는 역할을 하는 스레드가 있고, 메시지를 보내는 역할을 하는 녀석과 매 화면을 업데이트 하는 스레드가 있다. 이런식으로 하나의 프로세스에는 여러 스레드가 각자의 역할에 따라 수행한다. <br />
 
-## Available Scripts
+다른 예시라면 어떠한 수 배열에 대한 누적합을 구하는 과정에서도 하나의 배열을 누적합하는 하나의 스레드만 이용하는 방법과, 배열을 쪼갠 다음 promise 를 통해 2,3개의 스레드로 나누어서 작업하는 방식이 있다. 속도는 스레드를 나눠서 하는 쪽이 더 빠르다. <br />
 
-In the project directory, you can run:
+```js
+function main() {
+  const arr = Array(1).fill(Number.MAX_SAFE_INTEGER);
+  console.time("main"); // 시간 시작지점
 
-### `npm start`
+  const result = arr.reduce((acc, num) => acc + num, 0);
+  console.log(result);
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  console.timeEnd("main"); // 0.2203...ms
+}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+function sum(numberArray) {
+  return new Promise((resolve) => {
+    resolve(numberArray.reduce((acc, num) => acc + num, 0));
+  });
+}
 
-### `npm test`
+async function asyncMain() {
+  const arr = Array(1).fill(Number.MAX_SAFE_INTEGER);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  let mid = Math.ceil(arr.length / 2);
+  let firstHalf = arr.slice(0, mid);
+  let secondHalf = arr.slice(mid);
 
-### `npm run build`
+  console.time("asyncMain"); // 시간 시작지점
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  const [first, second] = await Promise.all([sum(firstHalf), sum(secondHalf)]);
+  console.log(first + second);
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  console.timeEnd("asyncMain"); // 0ms
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+main();
+asyncMain();
+```
 
-### `npm run eject`
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+다만 리엑트는 하나의 스레드만 활용하는데, 브라우저에서 스레드를 하나밖에 사용하지 않기 때문이다. 기본적으로 리엑트의 렌더링 과정은 크게 4번의 과정을 거치게 된다. <br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- state 값이 변경된다
+- 이후 virtual DOM 간의 diff 를 통해 변경사항을 파악한다
+- reconcile 과정을 통해 jsx 를 html 로 변경한다 (즉, 실제 DOM에 적용한다)
+- 컴포넌트가 렌더링 된 이후 effect 가 실행이 된다. (effect 에 따라 위 과정 반복)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="../images/virtualDOM.png" alt="virtualDOM" width="100%" />
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />

@@ -1,0 +1,32 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+label {
+  display: flex;
+  gap: 8px;
+}
+ul {
+  margin: 1em 0 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: flex;
+  gap: 2px;
+  margin: 0.5em 0;
+}
+li * {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #787c7e;
+  color: white;
+}
+.h {
+  background-color: #c9b458;
+  font-weight: normal;
+}
