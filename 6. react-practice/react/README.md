@@ -139,3 +139,86 @@ return (
 <br />
 
 (concurrency 는 process 1을 진행하다가 2로 전환되고 다시 1로 전환되는 방식을 취하게 된다.)
+
+### React.Memo
+
+이미 계산된 값에 대해서 매번 반복해서 계산하기보단 메모이제이션을 통해 이미 저장된 값을 그대로 사용하게 된다면 효율적일 것이다. 현 리엑트는 함수형 컴포넌트이며 함수라는 것에 알 수 있듯이, 반환값이 있고 이 반환값을 메모이제이션 할 수 있다. 이렇게 했을 경우 렌더링에서 효율성이 발휘 될 수 있다. 이전 useTransition 을 도입하기 전의 검색 애플리케이션으로 살펴보도록 하자. <br />
+
+```jsx
+const Word = ({ name, highlight = "" }) => {
+  const letters = name.split("");
+  return (
+    <li>
+      {letters.map((l, i) => (
+        <span className={highlight.includes(l) ? "h" : ""} key={i}>
+          {l}
+        </span>
+      ))}
+    </li>
+  );
+};
+
+const Words = function Words({ list, filter }) {
+  return (
+    <ul>
+      {list.map((name) => (
+        <Word key={name} name={name} highlight={filter} />
+      ))}
+    </ul>
+  );
+};
+
+export default Words;
+```
+
+<br />
+
+이전 예시와 동일하게 fetch 를 통해 받아온 단어 list 에 특정 문자에 대한 하이라이트를 작성하는 컴포넌트이다. 단어 리스트중에 속하는 단어들 중 검색 결과와 무관한 단어들은 메모이제이션 될 경우 훨씬 렌더링 결과가 좋아질 수 있겠다. <br />
+
+렌더링 성능은 구글 크롬 내 profiler 라는 리엑트 전용 애플리케이션에서 확인할 수 있다. 사용법은 간단하니 찾아보면 금방 나온다. 렌더링이 어떠한 순서로 어떠한 원인떄문에 발생했는지, 그 속도는 얼마인지를 한눈에 확인할 수 있다. <br />
+
+우선 메모이제이션 하지 않고 매 검색 결과마다 렌더링을 할 경우의 렌더링 성능은 아래와 같다. <br />
+
+<img src="../images/beforeMemo.png" alt="beforeMemo" center />
+
+<br />
+
+막대그래프의 높이가 높을 수록 렌더링 시 시간이 걸린다는 의미이다. 전체적으로 높은 수준이라는 것을 알 수 있다. 이제 React.Memo 를 도입헤보도록 하자. 우선 도입하기전에 현재 어떠한 상태에 의해 렌더링되는 word 가 재렌더링 되어야 하는지부터 알아야 한다. 새롭게 렌더링이 되려면 결국 하이라이트 부분이 변해야 한다. 즉, 하이라이트 부분에 변화가 없다면 이전의 메모리에 저장된 값을 사용해도 문제가 없다. <br />
+
+```jsx
+const Word = React.memo(
+  ({ name, highlight = "" }) => {
+    const letters = name.split("");
+    return (
+      <li>
+        {letters.map((l, i) => (
+          <span className={highlight.includes(l) ? "h" : ""} key={i}>
+            {l}
+          </span>
+        ))}
+      </li>
+    );
+  },
+  (prevProps, nextProps) => {
+    // 이전값과 다음값의 차이를 계산하기 위해 2가지 인자를 받는다.
+    const letters = prevProps.name.split("");
+    // 'aahed' -> ['a', 'a', 'h', 'e', 'd']
+    // 모든 문자가 이전 상태와 같다면 메모이제이션을 하게 된다.
+    return letters.every((l) => {
+      return (
+        nextProps.highlight.includes(l) === prevProps.highlight.includes(l)
+      );
+    });
+  }
+);
+```
+
+<br />
+
+위와 같이 메모이제이션 했을 경우, 렌더링 성능은 아래처럼 된다. <br />
+
+<img src="../images/afterMemo.png" alt="afterMemo" center />
+
+<br />
+
+물론 메모이제이션은 현 예제처럼 복잡한 다루는 데이터가 많을 경우 사용하도록 하자. 어찌되었던 메모리를 사용하는것이기 때문이다.
