@@ -222,3 +222,155 @@ const Word = React.memo(
 <br />
 
 물론 메모이제이션은 현 예제처럼 복잡한 다루는 데이터가 많을 경우 사용하도록 하자. 어찌되었던 메모리를 사용하는것이기 때문이다.
+
+### useMemo
+
+React.memo 와 마찬가지로 메모이제이션을 통해 렌더링의 효율을 증가시켜준다. 다른 예시를 통해 살펴보자 <br />
+
+```jsx
+let appRender = 0;
+export default function PocketMon() {
+  const [pokemon, setPokemon] = useState([]);
+  const [threshold, setThreshold] = useState(0);
+  const [search, setSearch] = useState("");
+  const [dummy, setDummy] = useState("");
+  const onSetSearch = useCallback((evt) => setSearch(evt.target.value), []);
+
+  useEffect(() => {
+    getByName(search).then(setPokemon);
+  }, [search]);
+
+  console.time("render"); // 시간 측정 시작점
+  const pokemonWithPower = () =>
+    pokemon
+      .map((p) => ({
+        ...p,
+        power: calculatePower(p),
+      }))
+      .filter((p) => p.power >= threshold);
+  const onSetThreshold = useCallback(
+    (evt) => setThreshold(parseInt(evt.target.value, 10)),
+    []
+  );
+
+  const countOverThreshold = () =>
+    pokemonWithPower.filter((p) => p.power > threshold).length;
+
+  const min = () => Math.min(...pokemonWithPower.map((p) => p.power));
+  const max = () => Math.max(...pokemonWithPower.map((p) => p.power));
+
+  console.timeEnd("render"); // 시간 측정 끝
+
+  return (
+    <div>
+      <div className='top-bar'>
+        <div>Search</div>
+        <input type='text' value={search} onChange={onSetSearch}></input>
+        <div>Power threshold</div>
+        <input
+          type='text'
+          value={threshold || 0}
+          onChange={onSetThreshold}
+        ></input>
+        <input
+          type='text'
+          value={dummy}
+          onChange={(e) => setDummy(e.target.value)}
+        />
+        <div>Count over threshold: {countOverThreshold}</div>
+      </div>
+      <div className='two-column'>
+        <MemoedPokemonTable pokemon={pokemonWithPower} />
+        <div>
+          <div>Min: {min}</div>
+          <div>Max: {max}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+```
+
+<br />
+
+코드가 조금 긴 편인데, 우선 useMemo 와 React.memo 의 차이점을 생각해보자. 둘 다 반환값을 메모이징 한다는 점에서는 같은데, React.memo 의 경우 함수 컴포넌트 내 반환값이 렌더링 부분에 대한 메모이징이며, useMemo 는 함수 내 로직에서의 계산값에 대한 메모이징이라고 생각하면 된다. 위 예시는 이를 잘 보여주는데, console.time 부터 해서 console.timeend 까지의 여러 계산값이 저장되는 변수들이 이에 해당한다. <br />
+
+코드에서 보면 setDummy 라고 해서 현재 컴포넌트에 어떠한 기능도 하지않지만, 상태값을 변화시키기에 렌더링을 유발하는 dummy 상태값을 조절하는 이벤트가 바인딩 되어있다. 즉 저 input 창에 타이핑을 할 때마다 계속해서 렌더링은 발생하게 되고, 함수가 재 실행된다는 것은 내부 변수 및 반환식들이 다시 실행된다는 것을 의미한다. 이때 렌더링이 될 때 시간을 console.time 으로 기록할 수 있는데, 이때 시간이 useMemo 를 사용할때와 아닐 때와의 차이를 보게 되면 확실히 차이가 발생한다.<br />
+
+아래 코드는 useMemo 를 통해 계산된 반환값을 메모이징 한 코드이다. <br />
+
+```jsx
+export default function PocketMon() {
+  const [pokemon, setPokemon] = useState([]);
+  const [threshold, setThreshold] = useState(0);
+  const [search, setSearch] = useState("");
+  const [dummy, setDummy] = useState("");
+  const onSetSearch = useCallback((evt) => setSearch(evt.target.value), []);
+
+  useEffect(() => {
+    getByName(search).then(setPokemon);
+  }, [search]);
+
+  console.time("render");
+  const pokemonWithPower = useMemo(
+    // useMemo 를 통해 반환값을 변화시킬 수 있는 변수 pokemon 과 threshold 의 변화가 없다면 같은 값!
+    () =>
+      pokemon
+        .map((p) => ({
+          ...p,
+          power: calculatePower(p),
+        }))
+        .filter((p) => p.power >= threshold),
+    [pokemon, threshold]
+  );
+  const onSetThreshold = useCallback(
+    // useCallback 의 경우는 반환함수를 메모이징 해준다고 생각하면 된다. 객체는 언제나 원시값이 아니니 매번 다르다.
+    (evt) => setThreshold(parseInt(evt.target.value, 10)),
+    []
+  );
+
+  const countOverThreshold = useMemo(
+    () => pokemonWithPower.filter((p) => p.power > threshold).length,
+    [pokemonWithPower, threshold]
+  );
+
+  const min = useMemo(
+    () => Math.min(...pokemonWithPower.map((p) => p.power)),
+    [pokemonWithPower]
+  );
+  const max = useMemo(
+    () => Math.max(...pokemonWithPower.map((p) => p.power)),
+    [pokemonWithPower]
+  );
+
+  console.timeEnd("render"); // 실제 시간을 측정 시 useMemo 를 사용했을 때 0.00ms 대로 떨어지게 된다.
+
+  return (
+    <div>
+      <div className='top-bar'>
+        <div>Search</div>
+        <input type='text' value={search} onChange={onSetSearch}></input>
+        <div>Power threshold</div>
+        <input
+          type='text'
+          value={threshold || 0}
+          onChange={onSetThreshold}
+        ></input>
+        <input
+          type='text'
+          value={dummy}
+          onChange={(e) => setDummy(e.target.value)}
+        />
+        <div>Count over threshold: {countOverThreshold}</div>
+      </div>
+      <div className='two-column'>
+        <MemoedPokemonTable pokemon={pokemonWithPower} />
+        <div>
+          <div>Min: {min}</div>
+          <div>Max: {max}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+```

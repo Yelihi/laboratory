@@ -49,12 +49,14 @@ export default function PocketMon() {
   const [pokemon, setPokemon] = useState([]);
   const [threshold, setThreshold] = useState(0);
   const [search, setSearch] = useState("");
+  const [dummy, setDummy] = useState("");
   const onSetSearch = useCallback((evt) => setSearch(evt.target.value), []);
 
   useEffect(() => {
     getByName(search).then(setPokemon);
   }, [search]);
 
+  console.time("render");
   const pokemonWithPower = useMemo(
     () =>
       pokemon
@@ -84,6 +86,8 @@ export default function PocketMon() {
     [pokemonWithPower]
   );
 
+  console.timeEnd("render");
+
   return (
     <div>
       <div className='top-bar'>
@@ -95,6 +99,11 @@ export default function PocketMon() {
           value={threshold || 0}
           onChange={onSetThreshold}
         ></input>
+        <input
+          type='text'
+          value={dummy}
+          onChange={(e) => setDummy(e.target.value)}
+        />
         <div>Count over threshold: {countOverThreshold}</div>
       </div>
       <div className='two-column'>
