@@ -8,6 +8,7 @@ import Logopath from "@/assets/colorful.svg";
 import styles from "./Auth.module.scss";
 import Loader from "@/components/loader/Loader";
 import Input from "@/components/input/Input";
+import AutoSignInCheckBox from "@/components/autoSignInCheckBox/AutoSignInCheckBox";
 
 const LoginClient = () => {
   const [email, setEmail] = useState("");
@@ -60,7 +61,12 @@ const LoginClient = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className={styles.group}></div>
+            <div className={styles.group}>
+              <AutoSignInCheckBox
+                checked={isAutoLogin}
+                onChange={(e) => setIsAutoLogin(e.target.checked)}
+              />
+            </div>
             <div className={styles.buttonGroup}>
               <div></div>
             </div>

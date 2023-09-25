@@ -52,7 +52,7 @@ const Input = ({
           errorProps && styles.inputWrapperError
         )}
       >
-        {icon ? <Icon /> : null}
+        {icon ? <Icon type={icon} /> : null}
         <input
           id={id}
           type={checkType()}
