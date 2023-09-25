@@ -9,10 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@reduxjs/toolkit": "^1.9.6",
+    "@tosspayments/payment-sdk": "^1.6.5",
+    "classnames": "^2.3.2",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "firebase": "^10.4.0",
     "next": "13.5.2",
+    "notiflix": "^3.2.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.4.5",
+    "react-redux": "^8.1.2",
+    "react-simple-star-rating": "^5.1.7",
+    "react-toastify": "^9.1.3",
+    "sass": "^1.68.0"
   }
 }
