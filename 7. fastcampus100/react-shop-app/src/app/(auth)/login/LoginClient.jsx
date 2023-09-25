@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import Logopath from "@/assets/colorful.svg";
@@ -9,6 +10,8 @@ import styles from "./Auth.module.scss";
 import Loader from "@/components/loader/Loader";
 import Input from "@/components/input/Input";
 import AutoSignInCheckBox from "@/components/autoSignInCheckBox/AutoSignInCheckBox";
+import Divider from "@/components/divider/Divider";
+import Button from "@/components/button/Button";
 
 const LoginClient = () => {
   const [email, setEmail] = useState("");
@@ -68,7 +71,17 @@ const LoginClient = () => {
               />
             </div>
             <div className={styles.buttonGroup}>
-              <div></div>
+              <Button type='submit' width='100%'>
+                로그인
+              </Button>
+              <Divider />
+              <Button width='100%' secondary>
+                <Link href={"/resigter"}>회원가입</Link>
+              </Button>
+              <Divider />
+              <div>
+                <Button onClick={signInWithGoogle}>구글 로그인</Button>
+              </div>
             </div>
           </form>
         </div>
