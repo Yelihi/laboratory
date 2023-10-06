@@ -34,7 +34,7 @@ const Input = ({
     return "text";
   };
 
-  const handleChange = () => {
+  const handleChange = (e) => {
     setInputValue(e.target.value);
     onChange(e);
   };
