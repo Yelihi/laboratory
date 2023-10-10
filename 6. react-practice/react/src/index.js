@@ -4,8 +4,8 @@ import "./styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
-import PocketMon from "./components/pocket/PocketMon";
-import ImageCompression from "./components/imageResizing/ImageCompression";
+import PocketMon from "./components/1.Pocket/PocketMon";
+import ImageCompression from "./components/2.imageResizing/ImageCompression";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
