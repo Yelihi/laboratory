@@ -19,7 +19,7 @@ const InfiniteScroll = () => {
     setPassengers((prevState) => [...prevState, ...fetchedPassengers]);
   };
 
-  // page 의 변화를 fetch에 적용시킨다만..솔직히 불필요하고 그냥 상단에 함수로 놔두면 된다.
+  // page 의 변화를 fetch에 적용시킨다
   useEffect(() => {
     fetch(page);
   }, [page]);
