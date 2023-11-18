@@ -7,27 +7,16 @@ import useSearchTodo from "../../hooks/useSearchTodo";
 
 type TodoListProps = {
   todoList: TodoListItem[];
-  setTodoList: React.Dispatch<React.SetStateAction<TodoListItem[]>>;
+  deleteTodoItem: (id: number) => void;
+  changeChecked: (id: number) => void;
 };
 
-const TodoList = ({ todoList, setTodoList }: TodoListProps) => {
+const TodoList = ({
+  todoList,
+  deleteTodoItem,
+  changeChecked,
+}: TodoListProps) => {
   const [searchValue, onChange, resultTodoList] = useSearchTodo(todoList);
-
-  const deleteTodoItem = (id: number) => () => {
-    const filterTodoList = todoList.filter((item) => item.id !== id);
-    setTodoList(filterTodoList);
-  };
-
-  const changeChecked = (id: number) => () => {
-    const checkingTodoList = todoList.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, isCheck: !todo.isCheck };
-      } else {
-        return { ...todo };
-      }
-    });
-    setTodoList(checkingTodoList);
-  };
 
   return (
     <div className={style.TodoList}>
@@ -42,8 +31,8 @@ const TodoList = ({ todoList, setTodoList }: TodoListProps) => {
           return (
             <TodoItem
               key={todo.id}
-              deleteTodoItem={deleteTodoItem(todo.id)}
-              changeChecked={changeChecked(todo.id)}
+              deleteTodoItem={deleteTodoItem}
+              changeChecked={changeChecked}
               {...todo}
             />
           );

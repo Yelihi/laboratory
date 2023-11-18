@@ -8,12 +8,20 @@ export type TodoListItem = {
 };
 
 type TodoItemProps = TodoListItem & {
-  deleteTodoItem: () => void;
-  changeChecked: () => void;
+  deleteTodoItem: (id: number) => void;
+  changeChecked: (id: number) => void;
 };
 
 const TodoItem = (props: TodoItemProps) => {
-  const { content, date, isCheck, deleteTodoItem, changeChecked } = props;
+  const { id, content, date, isCheck, deleteTodoItem, changeChecked } = props;
+
+  const onChangeChecked = () => {
+    changeChecked(id);
+  };
+
+  const onDeleteTodo = () => {
+    deleteTodoItem(id);
+  };
 
   return (
     <div className={style.TodoItem}>
@@ -21,11 +29,11 @@ const TodoItem = (props: TodoItemProps) => {
         className={style.checkboxCol}
         type='checkbox'
         checked={isCheck}
-        onChange={changeChecked}
+        onChange={onChangeChecked}
       />
       <div className={style.content}>{content}</div>
       <div className={style.date}>{new Date(date).toLocaleDateString()}</div>
-      <button onClick={deleteTodoItem}>삭제</button>
+      <button onClick={onDeleteTodo}>삭제</button>
     </div>
   );
 };
