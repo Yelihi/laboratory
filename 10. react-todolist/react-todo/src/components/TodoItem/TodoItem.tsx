@@ -3,7 +3,7 @@ import style from "./TodoItem.module.css";
 export type TodoListItem = {
   id: number;
   content: string;
-  date: string;
+  date: number;
   isCheck: boolean;
 };
 
@@ -24,7 +24,7 @@ const TodoItem = (props: TodoItemProps) => {
         onChange={changeChecked}
       />
       <div className={style.content}>{content}</div>
-      <div className={style.date}>{date}</div>
+      <div className={style.date}>{new Date(date).toLocaleDateString()}</div>
       <button onClick={deleteTodoItem}>삭제</button>
     </div>
   );

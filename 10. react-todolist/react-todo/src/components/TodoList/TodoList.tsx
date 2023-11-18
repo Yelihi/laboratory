@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import style from "./TodoList.module.css";
 
 import TodoItem from "../TodoItem/TodoItem";
