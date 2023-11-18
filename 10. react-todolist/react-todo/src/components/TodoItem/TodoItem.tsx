@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./TodoItem.module.css";
 
 export type TodoListItem = {

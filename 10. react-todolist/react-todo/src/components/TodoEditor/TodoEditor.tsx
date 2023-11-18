@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import style from "./TodoEditor.module.css";
 
 import useInput from "../../hooks/useInput";
@@ -9,6 +9,7 @@ type TodoEditorProps = {
 };
 
 const TodoEditor = ({ setTodoList }: TodoEditorProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue, onInputChange] = useInput();
 
   const getCreateTodoDate = () => {
@@ -20,7 +21,12 @@ const TodoEditor = ({ setTodoList }: TodoEditorProps) => {
   };
 
   const addTodoList = () => {
+    if (value == "" && inputRef.current !== null) {
+      inputRef.current.focus();
+      return;
+    }
     const newTodo: TodoListItem = {
+      // ref 를 활용하여 ref.current++ 로 고유 id 를 생성할 수도 있다.
       id: Math.random() * 100,
       content: value,
       date: getCreateTodoDate(),
@@ -40,6 +46,7 @@ const TodoEditor = ({ setTodoList }: TodoEditorProps) => {
   return (
     <div className={style.TodoEditor}>
       <input
+        ref={inputRef}
         placeholder='새로운 TODO...'
         value={value}
         onChange={onInputChange}
