@@ -1,9 +1,9 @@
 import "./App.css";
-import { useReducer, useCallback } from "react";
+import { useReducer, useCallback, useMemo } from "react";
 import Header from "./components/Header/Header";
 import TodoEditor from "./components/TodoEditor/TodoEditor";
 import TodoList from "./components/TodoList/TodoList";
-
+import { TodoStateContext, TodoDispatchContext } from "./TodoContext";
 import { reducer, defaultValue } from "./reducer/Todo";
 
 function App() {
@@ -30,11 +30,28 @@ function App() {
     });
   }, []);
 
+  const memoizationValue = useMemo(
+    () => ({
+      onCheck,
+      onCreate,
+      onDelete,
+    }),
+    []
+  );
+
   return (
     <section className='App'>
       <Header />
-      <TodoEditor onCreate={onCreate} />
-      <TodoList todoList={todoLists} onCheck={onCheck} onDelete={onDelete} />
+      <TodoStateContext.Provider
+        value={{
+          todoLists,
+        }}
+      >
+        <TodoDispatchContext.Provider value={memoizationValue}>
+          <TodoEditor />
+          <TodoList />
+        </TodoDispatchContext.Provider>
+      </TodoStateContext.Provider>
     </section>
   );
 }

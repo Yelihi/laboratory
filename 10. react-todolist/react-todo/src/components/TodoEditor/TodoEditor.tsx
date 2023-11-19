@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import style from "./TodoEditor.module.css";
 
+import { TodoDispatchContext } from "../../TodoContext";
 import useInput from "../../hooks/useInput";
 
-type TodoEditorProps = {
-  onCreate: (content: string) => void;
-};
+// type TodoEditorProps = {
+//   onCreate: (content: string) => void;
+// };
 
-const TodoEditor = ({ onCreate }: TodoEditorProps) => {
+const TodoEditor = () => {
+  const { onCreate } = useContext(TodoDispatchContext)!;
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue, onInputChange] = useInput();
 

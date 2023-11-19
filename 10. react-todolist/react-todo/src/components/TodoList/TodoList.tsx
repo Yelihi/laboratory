@@ -1,27 +1,22 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import style from "./TodoList.module.css";
 
 import TodoItem from "../TodoItem/TodoItem";
-import { TodoListItem } from "../TodoItem/TodoItem";
 import useSearchTodo from "../../hooks/useSearchTodo";
+import { TodoStateContext } from "../../TodoContext";
 
-type TodoListProps = {
-  todoList: TodoListItem[];
-  onCheck: (id: number) => void;
-  onDelete: (id: number) => void;
-};
-
-const TodoList = ({ todoList, onCheck, onDelete }: TodoListProps) => {
-  const [searchValue, onChange, resultTodoList] = useSearchTodo(todoList);
+const TodoList = () => {
+  const { todoLists } = useContext(TodoStateContext)!;
+  const [searchValue, onChange, resultTodoList] = useSearchTodo(todoLists);
 
   // 만일 todoList 의 길이가 길어질수록 연산과정이 길어진다. 즉, todoList 가 변경되지 않으면 호출하지 않는게 좋다.
   const { totalCount, doneCount, notDoneCount } = useMemo(() => {
-    const totalCount = todoList.length;
-    const doneCount = todoList.filter((todo) => todo.isCheck).length;
+    const totalCount = todoLists.length;
+    const doneCount = todoLists.filter((todo) => todo.isCheck).length;
     const notDoneCount = totalCount - doneCount;
 
     return { totalCount, doneCount, notDoneCount };
-  }, [todoList]);
+  }, [todoLists]);
 
   return (
     <div className={style.TodoList}>
@@ -35,15 +30,8 @@ const TodoList = ({ todoList, onCheck, onDelete }: TodoListProps) => {
         onChange={onChange}
       />
       <div className={style.todosWrapper}>
-        {resultTodoList.map((todo) => {
-          return (
-            <TodoItem
-              key={todo.id}
-              onCheck={onCheck}
-              onDelete={onDelete}
-              {...todo}
-            />
-          );
+        {resultTodoList?.map((todo) => {
+          return <TodoItem key={todo.id} {...todo} />;
         })}
       </div>
     </div>

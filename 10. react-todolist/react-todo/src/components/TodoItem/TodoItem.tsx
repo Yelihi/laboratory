@@ -1,5 +1,6 @@
-import { memo } from "react";
+import { memo, useContext } from "react";
 import style from "./TodoItem.module.css";
+import { TodoDispatchContext } from "../../TodoContext";
 
 export type TodoListItem = {
   id: number;
@@ -8,13 +9,9 @@ export type TodoListItem = {
   isCheck: boolean;
 };
 
-type TodoItemProps = TodoListItem & {
-  onCheck: (id: number) => void;
-  onDelete: (id: number) => void;
-};
-
-const TodoItem = (props: TodoItemProps) => {
-  const { id, content, date, isCheck, onCheck, onDelete } = props;
+const TodoItem = (props: TodoListItem) => {
+  const { onCheck, onDelete } = useContext(TodoDispatchContext)!;
+  const { id, content, date, isCheck } = props;
 
   const onChangeChecked = () => {
     onCheck(id);
