@@ -8,19 +8,24 @@ export type TodoListItem = {
 };
 
 type TodoItemProps = TodoListItem & {
-  deleteTodoItem: (id: number) => void;
-  changeChecked: (id: number) => void;
+  dispatch: React.Dispatch<any>;
 };
 
 const TodoItem = (props: TodoItemProps) => {
-  const { id, content, date, isCheck, deleteTodoItem, changeChecked } = props;
+  const { id, content, date, isCheck, dispatch } = props;
 
   const onChangeChecked = () => {
-    changeChecked(id);
+    dispatch({
+      type: "CHANGE_CHECK",
+      data: id,
+    });
   };
 
   const onDeleteTodo = () => {
-    deleteTodoItem(id);
+    dispatch({
+      type: "DELETE_TODO",
+      data: id,
+    });
   };
 
   return (

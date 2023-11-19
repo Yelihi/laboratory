@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./TodoList.module.css";
 
 import TodoItem from "../TodoItem/TodoItem";
@@ -7,15 +6,10 @@ import useSearchTodo from "../../hooks/useSearchTodo";
 
 type TodoListProps = {
   todoList: TodoListItem[];
-  deleteTodoItem: (id: number) => void;
-  changeChecked: (id: number) => void;
+  dispatch: React.Dispatch<any>;
 };
 
-const TodoList = ({
-  todoList,
-  deleteTodoItem,
-  changeChecked,
-}: TodoListProps) => {
+const TodoList = ({ todoList, dispatch }: TodoListProps) => {
   const [searchValue, onChange, resultTodoList] = useSearchTodo(todoList);
 
   return (
@@ -28,14 +22,7 @@ const TodoList = ({
       />
       <div className={style.todosWrapper}>
         {resultTodoList.map((todo) => {
-          return (
-            <TodoItem
-              key={todo.id}
-              deleteTodoItem={deleteTodoItem}
-              changeChecked={changeChecked}
-              {...todo}
-            />
-          );
+          return <TodoItem key={todo.id} dispatch={dispatch} {...todo} />;
         })}
       </div>
     </div>

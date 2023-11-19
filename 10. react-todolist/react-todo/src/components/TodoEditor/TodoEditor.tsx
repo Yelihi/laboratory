@@ -2,13 +2,12 @@ import React, { useRef } from "react";
 import style from "./TodoEditor.module.css";
 
 import useInput from "../../hooks/useInput";
-import { TodoListItem } from "../TodoItem/TodoItem";
 
 type TodoEditorProps = {
-  setTodoList: React.Dispatch<React.SetStateAction<TodoListItem[]>>;
+  dispatch: React.Dispatch<any>;
 };
 
-const TodoEditor = ({ setTodoList }: TodoEditorProps) => {
+const TodoEditor = ({ dispatch }: TodoEditorProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue, onInputChange] = useInput();
 
@@ -17,14 +16,11 @@ const TodoEditor = ({ setTodoList }: TodoEditorProps) => {
       inputRef.current.focus();
       return;
     }
-    const newTodo: TodoListItem = {
-      // ref 를 활용하여 ref.current++ 로 고유 id 를 생성할 수도 있다.
-      id: Math.random() * 100,
-      content: value,
-      date: new Date().getTime(),
-      isCheck: false,
-    };
-    setTodoList((prev) => [newTodo, ...prev]);
+
+    dispatch({
+      type: "ADD_TODO",
+      data: value,
+    });
     setValue("");
   };
 
