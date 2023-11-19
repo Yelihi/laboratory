@@ -4,10 +4,10 @@ import style from "./TodoEditor.module.css";
 import useInput from "../../hooks/useInput";
 
 type TodoEditorProps = {
-  dispatch: React.Dispatch<any>;
+  onCreate: (content: string) => void;
 };
 
-const TodoEditor = ({ dispatch }: TodoEditorProps) => {
+const TodoEditor = ({ onCreate }: TodoEditorProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue, onInputChange] = useInput();
 
@@ -16,11 +16,7 @@ const TodoEditor = ({ dispatch }: TodoEditorProps) => {
       inputRef.current.focus();
       return;
     }
-
-    dispatch({
-      type: "ADD_TODO",
-      data: value,
-    });
+    onCreate(value);
     setValue("");
   };
 

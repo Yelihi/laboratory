@@ -1,3 +1,4 @@
+import { memo } from "react";
 import style from "./TodoItem.module.css";
 
 export type TodoListItem = {
@@ -8,24 +9,19 @@ export type TodoListItem = {
 };
 
 type TodoItemProps = TodoListItem & {
-  dispatch: React.Dispatch<any>;
+  onCheck: (id: number) => void;
+  onDelete: (id: number) => void;
 };
 
 const TodoItem = (props: TodoItemProps) => {
-  const { id, content, date, isCheck, dispatch } = props;
+  const { id, content, date, isCheck, onCheck, onDelete } = props;
 
   const onChangeChecked = () => {
-    dispatch({
-      type: "CHANGE_CHECK",
-      data: id,
-    });
+    onCheck(id);
   };
 
   const onDeleteTodo = () => {
-    dispatch({
-      type: "DELETE_TODO",
-      data: id,
-    });
+    onDelete(id);
   };
 
   return (
@@ -43,4 +39,4 @@ const TodoItem = (props: TodoItemProps) => {
   );
 };
 
-export default TodoItem;
+export default memo(TodoItem);
