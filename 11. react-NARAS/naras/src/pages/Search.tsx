@@ -8,7 +8,7 @@ import { API } from "../utils/API";
 import { AllCountries } from "../utils/APITypes";
 
 const Search = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [countries, setCountries] = useState<AllCountries[]>([]);
 
   // 최선은 아닌거같다. 결국 3번의 렌더링이 발생하니깐? 근데 어차피 loading 이면 3번은 발생해야한다.
