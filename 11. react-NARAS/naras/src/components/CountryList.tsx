@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./CountryList.module.css";
 
 import CountryItem from "./CountryItem";

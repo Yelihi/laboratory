@@ -11,6 +11,10 @@
   font-weight: bold;
 }
 
+.header > div {
+  cursor: pointer;
+}
+
 .main {
   max-width: 700px;
   margin: 0 auto;

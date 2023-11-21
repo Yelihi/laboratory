@@ -1,5 +1,5 @@
 import style from "./Home.module.css";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { API } from "../utils/API";
 import { AllCountries } from "../utils/APITypes";
 

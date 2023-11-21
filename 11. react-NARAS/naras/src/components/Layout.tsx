@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import style from "./Layout.module.css";
 
 type LayoutProps = {
@@ -6,10 +7,15 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
+  const navigate = useNavigate();
+
+  const moveToHome = useCallback(() => {
+    navigate("/");
+  }, []);
   return (
     <div>
       <header className={style.header}>
-        <div>🌍 NARAS</div>
+        <div onClick={moveToHome}>🌍 NARAS</div>
       </header>
       <main className={style.main}>{children}</main>
     </div>
