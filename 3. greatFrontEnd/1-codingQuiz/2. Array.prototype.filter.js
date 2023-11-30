@@ -18,8 +18,8 @@ Array.prototype.myFilter = function (callbackFn, thisArg) {
   const thisArrLen = this.length;
 
   for (let i = 0; i < thisArrLen; i++) {
-    if (Object.hasOwn(this, k) && callbackFn.call(thisArg, this[i], i, this)) {
-      filteringArray.push(this[k]);
+    if (Object.hasOwn(this, i) && callbackFn.call(thisArg, this[i], i, this)) {
+      filteringArray.push(this[i]);
     } else {
       continue;
     }
