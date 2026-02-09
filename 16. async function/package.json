@@ -1,0 +1,17 @@
+{
+  "name": "async-function",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "npm run build && cd server && npm start"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "typescript": "^5.2.0",
+    "@types/node": "^20.0.0"
+  }
+}

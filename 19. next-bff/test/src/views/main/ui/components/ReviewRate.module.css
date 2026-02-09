@@ -1,0 +1,19 @@
+.reviewRateSection {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}
+
+.reviewRateLabel {
+  font-weight: 700;
+  color: #000000;
+  /* fontSize는 인라인 스타일로 처리 */
+}
+
+.reviewCount {
+  font-weight: 400;
+  color: #f5f5f5;
+  /* fontSize는 인라인 스타일로 처리 */
+}

@@ -1,0 +1,6 @@
+export enum SORT_FEED_ITEM_TYPE {
+  FEED = "FEED",
+  GIFT = "GIFT",
+  REVIEW = "REVIEW",
+  SHORTCUT = "SHORTCUT",
+}

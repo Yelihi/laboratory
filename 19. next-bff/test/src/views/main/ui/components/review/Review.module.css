@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+}
+
+.reviewImageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: 4px;
+}
+
+.imageSection {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  gap: 5px;
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex: 1;
+  min-width: 0;
+  gap: 2px;
+}
+
+.artistName {
+  font-size: 12px;
+  font-weight: 400;
+  color: #d4a574;
+  line-height: 1.4;
+}
+
+.productName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

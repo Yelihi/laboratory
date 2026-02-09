@@ -1,0 +1,82 @@
+{
+  "id": "1",
+  "icon": "https://image.idus.com/image/files/80ff4442c5f249ea8260c4b88181a482.png",
+  "targetId": "9",
+  "title": [
+    {
+      "text": "새해",
+      "types": ["BOLD"],
+      "size": 14,
+      "color": "#1FA328",
+      "colorWeb": "#1FA328",
+      "bgColor": null,
+      "bgColorWeb": null
+    },
+    {
+      "text": " 선물로 이런 작품 어때요?",
+      "types": [],
+      "size": 14,
+      "color": "#666666",
+      "colorWeb": "#666666",
+      "bgColor": null,
+      "bgColorWeb": null
+    }
+  ],
+  "themeTitle": "정성 가득한 핸드메이드 선물",
+  "items": [
+    {
+      "uuid": "196e9065-193c-4fb2-954a-a1faeebf171d",
+      "name": "설날선물사전예약/앙금쿠키/상견례선물/새해선물/쿠키선물",
+      "artistId": 7252635,
+      "artistUuid": "561b8a4a-8368-4f60-9687-e113bddfea57",
+      "saleRate": 17,
+      "priceSale": 44590,
+      "thumbImageUrl": "https://image.idus.com/image/files/4bd33512097b496484fb22b7632277f5_400.jpg"
+    },
+    {
+      "uuid": "f9557789-2e68-43bc-a67d-c5ebfcee0000",
+      "name": "[설날선물] 뜨개 미니미 오복 복주머니 키링",
+      "artistId": 2694975,
+      "artistUuid": "7b7f8aea-9bc9-4620-a353-53fa1fb0282d",
+      "saleRate": 9,
+      "priceSale": 6825,
+      "thumbImageUrl": "https://image.idus.com/image/files/90498ad75e814e88afca0b54f485601b_400.jpg"
+    },
+    {
+      "uuid": "06676649-f132-4755-8040-6cdc37f069b5",
+      "name": "[2025]새해 푸른뱀 수세미 청뱀띠",
+      "artistId": 4402006,
+      "artistUuid": "fcc7a8bd-aa82-485b-8672-87bde78e74de",
+      "saleRate": 9,
+      "priceSale": 3913,
+      "thumbImageUrl": "https://image.idus.com/image/files/c551066f52b249cf9b6adea947a9e42e_400.jpg"
+    },
+    {
+      "uuid": "8bceefd3-7be5-420b-b871-1ce38dac829e",
+      "name": " 🐍2025년 복조리 뜨개질키링🐍",
+      "artistId": 3675271,
+      "artistUuid": "09760819-6bca-47d3-9fa6-95ac7433a4f4",
+      "saleRate": 18,
+      "priceSale": 12285,
+      "thumbImageUrl": "https://image.idus.com/image/files/272dace1472e4801a19fd7c2b98aa74b_400.jpg"
+    },
+    {
+      "uuid": "6c58fc4c-066b-4a46-b3d6-48c2023298c6",
+      "name": "새해 설날선물 손뜨개 복주머니 부모님용돈봉투&용돈이벤트",
+      "artistId": 3575653,
+      "artistUuid": "86bdc859-15e8-4b32-96b6-49a69fddf433",
+      "saleRate": 31,
+      "priceSale": 3800,
+      "thumbImageUrl": "https://image.idus.com/image/files/0db752273aa74c0086f08e00e1a5ccb1_400.jpg"
+    },
+    {
+      "uuid": "dd564152-ce0e-4884-8d79-665f7e42d8ae",
+      "name": "💌설명절 새해선물 달콤바삭한 머랭쿠키💌",
+      "artistId": 48334,
+      "artistUuid": "624cbfaa-7057-11e4-bb59-06a6fa0000b9",
+      "saleRate": 29,
+      "priceSale": 1411,
+      "thumbImageUrl": "https://image.idus.com/image/files/a633807c59fa48e19481778dd70484d9_400.jpg"
+    }
+  ]
+}

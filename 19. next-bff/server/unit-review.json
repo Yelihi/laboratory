@@ -1,0 +1,627 @@
+{
+    "title": [
+      {
+        "text": "#선물",
+        "types": ["BOLD"],
+        "size": 18,
+        "color": "#ff505fcd",
+        "colorWeb": "#505fcdff",
+        "bgColor": null,
+        "bgColorWeb": null
+      },
+      {
+        "text": " 구매 후 이런 점이 좋았대요",
+        "types": ["BOLD"],
+        "size": 18,
+        "color": "#ff333333",
+        "colorWeb": "#333333ff",
+        "bgColor": null,
+        "bgColorWeb": null
+      }
+    ],
+  
+    "products": [
+      {
+        "uuid": "1b40f770-3c73-4cf4-83f9-7fd41f969f78",
+        "image":
+          "https://image.idus.com/image/files/c080a769e30041e6bff6c61b0cd40b8b_400.jpg",
+        "productName": "💝스틱청💝 과일청 단체선물 답례품 선물세트 수제청",
+        "artistName": "슈퍼마마",
+        "saleRate": 58,
+        "price": 10500,
+        "reviewInfo": [
+          {
+            "text": "포장도 너무 꼼꼼히 해주셨답니다^^",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 136
+      },
+      {
+        "uuid": "6e35cb5e-5fdb-4da1-b5a9-54c38e33a0f2",
+        "image":
+          "https://image.idus.com/image/files/489eb1c77e8742d2a01cdafc1d897eb4_400.jpg",
+        "productName": "🍓설 예약🍓센스있는 보자기 선물세트❤️",
+        "artistName": "가득 수제과일청",
+        "saleRate": 38,
+        "price": 16835,
+        "reviewInfo": [
+          {
+            "text": "선물용으로 샀는데 포장도 잘 되어있고 먹기 편하게 되어있어 좋아요.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.8,
+        "reviewCount": 66
+      },
+      {
+        "uuid": "b0f01bd6-fab9-427a-a59b-977be5681694",
+        "image":
+          "https://image.idus.com/image/files/01f895a5d1674ca39a25f66eeca24cb5_400.jpg",
+        "productName": "❤️87차완판❤️결혼식 돌잔치 퇴사 개업 행사 답례품",
+        "artistName": "스위트스멜링",
+        "saleRate": 40,
+        "price": 5900,
+        "reviewInfo": [
+          {
+            "text": "너무 깨끗하고 깔끔하게 잘포장되어 왔어요..",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "판매자님이 너무 친절하게 응대 잘해주셔서 감사합니다^^",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 203
+      },
+      {
+        "uuid": "4d061ce8-9b1f-433d-baf7-db06417fe9c0",
+        "image":
+          "https://image.idus.com/image/files/2fd6068fa7474d11ba2f8dfb2226a119_400.jpg",
+        "productName": "❤️구움찰떡❤️ 명절선물 설날선물 답례 첫인사 집들이",
+        "artistName": "플로라이스",
+        "saleRate": 0,
+        "price": 13000,
+        "reviewInfo": [
+          {
+            "text": "포장하나하나에 신경쓴게 너무 많이 보이더라구요!",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 다른분들께도 추천해드려야겠숩니다!!😉",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 88
+      },
+      {
+        "uuid": "4c4ab842-2573-4c14-9aa1-c28dddecdf4b",
+        "image":
+          "https://image.idus.com/image/files/8c74fcc212744209addd4fade0880d14_400.jpg",
+        "productName": "❤️수제청❤️300g 답례품 선물 결혼 돌잔치 구정",
+        "artistName": "심스블렌딩",
+        "saleRate": 34,
+        "price": 5900,
+        "reviewInfo": [
+          {
+            "text": "3가지맛 5개 구매했는데 박스에 스티커로 표시해주시고 안에도 용량, 제조일이 작성되어있어 좋더라구요.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 사진은 없는데 아이스...",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 18
+      },
+      {
+        "uuid": "5aa100ca-0490-4587-b0ee-4ce29b336559",
+        "image":
+          "https://image.idus.com/image/files/2b674ae287fe43dc8697c171b4c1923e_400.jpg",
+        "productName": "겉바속촉 까눌레",
+        "artistName": "디어(Dear)",
+        "saleRate": 23,
+        "price": 2700,
+        "reviewInfo": [
+          {
+            "text": "꼼꼼한 포장 감사합니다",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 먹어본거 까놀라중에 가장 맛있다고 합니당 후기가 좋은 이유가 다 있었네요:₩♥️",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 2967
+      },
+      {
+        "uuid": "d323c342-2a28-4aa2-bb53-9ba0bfc10a2a",
+        "image":
+          "https://image.idus.com/image/files/918c2f03781c4dcebd3c7c644238ede0_400.jpg",
+        "productName": "[답례품] 곰돌이쌀마들렌🐻+프레첼🥨 / 라벨가능⭕️",
+        "artistName": "데이즈바이마미 ",
+        "saleRate": 16,
+        "price": 3780,
+        "reviewInfo": [
+          {
+            "text": "... 덕분에 저도 맛을 볼 수 있었어요! 너무 맛있고 좋더라고요~ ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "게다가 뽁뽁이로 얼마나 세심하게 포장해주셨는지 감동이었습니다",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "...",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 64
+      },
+      {
+        "uuid": "ae76f3d5-6872-4b2a-86e8-56125496513b",
+        "image":
+          "https://image.idus.com/image/files/2d1c34c72cb04245b911c61ba29cddf4_400.jpg",
+        "productName": "[ 머랭쿠키 ]머랭 답례품 선물 세트",
+        "artistName": "해블랑디저트",
+        "saleRate": 20,
+        "price": 1200,
+        "reviewInfo": [
+          {
+            "text": "포장도 꼼꼼히 잘 되어 있고 라벨서비스까지 너무나 감사합니다^^ 아기가 너무 좋아하네요^^",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.8,
+        "reviewCount": 103
+      },
+      {
+        "uuid": "3d077bdc-d67b-4cb2-896b-e65f31000a07",
+        "image":
+          "https://image.idus.com/image/files/623ef4de89244e388c76bf4ff3ddfd9a_400.jpg",
+        "productName": "귀요미 쿠키 선물세트/커스텀스티커/답례품",
+        "artistName": "별난디저트",
+        "saleRate": 7,
+        "price": 2500,
+        "reviewInfo": [
+          {
+            "text": "배송도 날짜 맞게 해 주시고 포장도 깔끔하게 잘 왔습니다.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 쿠키도 맛나요 ~~~",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 396
+      },
+      {
+        "uuid": "e302925b-309a-42cc-9188-2cf896366592",
+        "image":
+          "https://image.idus.com/image/files/1e5318c6909b4a3ca80f4a95d056983e_400.jpg",
+        "productName": "💗스티커제작💗프레첼머랭/크래커머랭🌸머랭쿠키#답례품",
+        "artistName": "리리롱",
+        "saleRate": 23,
+        "price": 2700,
+        "reviewInfo": [
+          {
+            "text": "하나하나 다 뽁뽁이 포장으로 와서 깨진것 없이 완전 빠른배송입니다.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 원하는 날짜에 받았고요 바로 다음날받고 먹어보고 싶었지...",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 445
+      },
+      {
+        "uuid": "ba9f737f-0ed4-47f2-b963-0b6bef940c46",
+        "image":
+          "https://image.idus.com/image/files/15c4dc20f9a14ae4bff35cf9f9cd0f1f_400.jpg",
+        "productName": "🐝 오트밀 꿀 미니 비누 2개",
+        "artistName": "필로소퍼 philosoaper",
+        "saleRate": 25,
+        "price": 1500,
+        "reviewInfo": [
+          {
+            "text": "서비스도 챙겨주시고 답례품으로 구매했는데 포장도 엄청 꼼꼼하게 해주셨어요 !!",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 너무 감사합니다 받아보고 너무 만족스러워서 ...",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 77
+      },
+      {
+        "uuid": "d71008a8-e74e-43ff-b42c-3cf2bde50f82",
+        "image":
+          "https://image.idus.com/image/files/f08527ab49c04821bddf51462db4134b_400.jpg",
+        "productName": "부적보다 좋은, 행운을 부르는 클로버 그린라인 팔찌",
+        "artistName": "연데이(yeonday)",
+        "saleRate": 17,
+        "price": 10000,
+        "reviewInfo": [
+          {
+            "text": "...사장님의 꼼꼼함을 엿볼 수 있었어요~ ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "요즘같이 장마철에 “젖음주의”스티커라니👍 상자를 열자마자 은은하니 좋은 향이 났어요~",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 17
+      },
+      {
+        "uuid": "6755648c-37b0-4139-951b-129f2c8a6e8e",
+        "image":
+          "https://image.idus.com/image/files/6390b921dea146dc949faff65ec48922_400.jpg",
+        "productName": "11.11데이🎁선물 귀욤폭발🎉머랭쿠키",
+        "artistName": "쥬쥬#",
+        "saleRate": 14,
+        "price": 3000,
+        "reviewInfo": [
+          {
+            "text": "한개씩 뽁뽁이로 싸고 전체를 또 뽁뽁이로 싸주셔서 깨진것 하나없이 잘 도착했습니다ㅎㅎ",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 너무 귀여워요ㅜㅜㅜㅜ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.8,
+        "reviewCount": 23
+      },
+      {
+        "uuid": "8de3c393-c782-4775-989b-267832f2e863",
+        "image":
+          "https://image.idus.com/image/files/0b51117ae2ff48c89fef03ac83476571_400.jpg",
+        "productName": "💞발렌타인데이머랭쿠키. 하트머랭쿠키.발렌타인머랭",
+        "artistName": "도로시",
+        "saleRate": 27,
+        "price": 1600,
+        "reviewInfo": [
+          {
+            "text": "이뿌게 포장꼼꼼하게 잘 도착했네요. ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "깔끔한 포장이 선물하기 딱!",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 입니다.",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 32
+      },
+      {
+        "uuid": "9412c5f6-1b14-4dac-9050-e1f81ad9550d",
+        "image":
+          "https://image.idus.com/image/files/93c67c5803164fe3af1905409f7df7e8_400.jpg",
+        "productName": "🎁크리스마스 산타 버킷백 구디백🎅🏻🤍",
+        "artistName": "마르멜로",
+        "saleRate": 0,
+        "price": 2000,
+        "reviewInfo": [
+          {
+            "text": "포장도깔끔하고너무이뻐요",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 아이들이 간식만먹는것보다는 이렇게 장난감이들어있으니 더좋아할거같아요 배송도진짜빨랐어요 작가님께서 늦...",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 32
+      },
+      {
+        "uuid": "22b5ba8a-d64f-489b-ae18-14927bd9bd71",
+        "image":
+          "https://image.idus.com/image/files/c8acd60bc69548eeac3ad5f19e2310ef_400.jpg",
+        "productName": "🚀당일출고 🐶멍멍술잔1P🐕 (강아지술잔",
+        "artistName": "윤니도예공방",
+        "saleRate": 8,
+        "price": 12000,
+        "reviewInfo": [
+          {
+            "text": "포장을 꼼꼼히 해주셔서 못 뜯겠어요.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 받으실 분이 분명 좋아하시리라 믿숩니다",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 50
+      },
+      {
+        "uuid": "89918894-c267-4cc3-bbf1-69f5e05f3111",
+        "image":
+          "https://image.idus.com/image/files/47d635f59bee4295aee36428bab7acd6_400.jpg",
+        "productName": "설날할인🔥 대용량 더치커피 1리터 콜드브루 원액 선물",
+        "artistName": "오스트리치 FACTORY",
+        "saleRate": 36,
+        "price": 9551,
+        "reviewInfo": [
+          {
+            "text": "포장도 꼼꼼하고 선물하기 너무 좋아요~!",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 4448
+      },
+      {
+        "uuid": "b9816ad7-04ad-4133-96c3-7460efee24f8",
+        "image":
+          "https://image.idus.com/image/files/2d913ae9d12b480b950a5f3186d0eb51_400.jpg",
+        "productName": "명품고지서🌈새해용돈봉투 생일이벤트 기념일💕임밍아웃",
+        "artistName": "위시메이드",
+        "saleRate": 31,
+        "price": 8900,
+        "reviewInfo": [
+          {
+            "text": "엄마 환갑생신용으로 구매했어요! ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "꼼꼼히 포장해주셔서 잘 가지고 있다가 생신때 쓰려고요😊",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 85
+      },
+      {
+        "uuid": "bcb93449-3e3a-4f71-bc71-6540fcbafa21",
+        "image":
+          "https://image.idus.com/image/files/179382f8257c4afbbea84c2fc5c072fc_400.jpg",
+        "productName": "로즈피아 오렌지골드 장미 생화 10대 27송이 이상",
+        "artistName": "로즈피아",
+        "saleRate": 38,
+        "price": 13305,
+        "reviewInfo": [
+          {
+            "text": "...항상 예쁘고 포장도 꼼꼼하게 도착해서 선물받는 기분이에요. ",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": "아주 싱싱하고 포장도 잘 되어 있어 흐트러짐 없이 잘 왔답니다.",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 5,
+        "reviewCount": 463
+      },
+      {
+        "uuid": "f9df6c5f-0e59-450e-8990-23381ac25595",
+        "image":
+          "https://image.idus.com/image/files/638b90957c9248139d117d939947d479_400.jpg",
+        "productName": "💙선리뷰이벤트🦐특허받은 새우장🦐유산균첨가",
+        "artistName": "👑인기젓갈👑",
+        "saleRate": 51,
+        "price": 13104,
+        "reviewInfo": [
+          {
+            "text": "포장 엄청 꼼꼼하게 왔어요!",
+            "types": ["BOLD"],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          },
+          {
+            "text": " 사은품으로 주신 게장부터 맛봤는데 앉은 자리에서 다 먹었어요,,,😊",
+            "types": [],
+            "size": 13,
+            "color": "#ff666666",
+            "colorWeb": "#666666ff",
+            "bgColor": null,
+            "bgColorWeb": null
+          }
+        ],
+        "reviewRate": 4.9,
+        "reviewCount": 639
+      }
+    ]
+  }

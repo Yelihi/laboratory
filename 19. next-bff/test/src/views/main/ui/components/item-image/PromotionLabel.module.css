@@ -1,0 +1,14 @@
+.badgeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 4px;
+  /* colorBackground는 인라인 스타일로 처리 */
+}
+
+.label {
+  font-weight: 500;
+  white-space: nowrap;
+  /* colorFont와 size는 인라인 스타일로 처리 */
+}

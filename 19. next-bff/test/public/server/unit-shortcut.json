@@ -1,0 +1,83 @@
+{
+  "title": "어떤 선물을 하나요?",
+  "items": [
+    {
+      "id": 0,
+      "imageUrl": "https://cdn.idus.kr/www/744094f798a31cc623ec5aa546680ed7a074d19b/resources/dist/images/category-shortcut/1.png",
+      "label": "선물하기 홈",
+      "webUrl": "https://www.idus.com/v2/gift/shop"
+    },
+    {
+      "id": 0,
+      "imageUrl": "https://image.idus.com/image/files/8c922819972c45efb5b798d687b5cbdb.png",
+      "label": "기프트카드",
+      "webUrl": "https://www.idus.com/v2/gift-card"
+    },
+    {
+      "id": 494,
+      "imageUrl": "https://image.idus.com/image/files/5dbf1514195742179a2c5d41513f5dc8.png",
+      "label": "설선물",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=494"
+    },
+    {
+      "id": 495,
+      "imageUrl": "https://image.idus.com/image/files/3d956d32ba48470fb3d3052473e98f26.png",
+      "label": "졸업선물",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=495"
+    },
+    {
+      "id": 496,
+      "imageUrl": "https://image.idus.com/image/files/35e740ae2a484251891dfc8e3a3bba37.jpg",
+      "label": "생일",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=496"
+    },
+    {
+      "id": 497,
+      "imageUrl": "https://image.idus.com/image/files/3d8ee1e231834684bd59aad027a5ba10.png",
+      "label": "커플",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=497"
+    },
+    {
+      "id": 498,
+      "imageUrl": "https://image.idus.com/image/files/a07312806f0d49aaa42bbb0c126b4ee3.png",
+      "label": "커스텀/각인",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=498"
+    },
+    {
+      "id": 499,
+      "imageUrl": "https://image.idus.com/image/files/42607d2977f845c4bcc850610aa6d761.png",
+      "label": "답례품/단체",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=499"
+    },
+    {
+      "id": 500,
+      "imageUrl": "https://image.idus.com/image/files/acdf6cabf70d4b11a2b2aaeaf300abd4.jpg",
+      "label": "집들이/개업",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=500"
+    },
+    {
+      "id": 501,
+      "imageUrl": "https://image.idus.com/image/files/e1f0372eeb844c1bbbbedcf47b70355e.png",
+      "label": "결혼",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=501"
+    },
+    {
+      "id": 502,
+      "imageUrl": "https://image.idus.com/image/files/7764cf93c7e54c94bb0c2214c0a4e727.png",
+      "label": "임신/출산",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=502"
+    },
+    {
+      "id": 503,
+      "imageUrl": "https://image.idus.com/image/files/76dcbbbd1c404c0a8ea63d5626ceaccf.jpg",
+      "label": "시험/합격",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=503"
+    },
+    {
+      "id": 504,
+      "imageUrl": "https://image.idus.com/image/files/f34e9024cb5c4ffd9d6f349453636e05.png",
+      "label": "건강/힐링",
+      "webUrl": "https://www.idus.com/v2/gift/shop/survey?theme_id=504"
+    }
+  ]
+}

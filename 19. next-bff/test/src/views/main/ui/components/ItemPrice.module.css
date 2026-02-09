@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}
+
+.saleRate {
+  font-weight: 700;
+  color: red;
+  /* fontSize는 인라인 스타일로 처리 */
+}
+
+.price {
+  font-weight: 700;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* fontSize는 인라인 스타일로 처리 */
+}
+
+.priceUnit {
+  font-weight: 400;
+  color: black;
+  /* fontSize는 인라인 스타일로 처리 */
+}

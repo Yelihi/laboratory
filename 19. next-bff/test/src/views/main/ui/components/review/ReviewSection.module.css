@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 4px;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.reviewsSlider {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+  width: 100%;
+  height: fit-content;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-right: 10px;
+}
+
+.reviewsSlider::-webkit-scrollbar {
+  display: none;
+}

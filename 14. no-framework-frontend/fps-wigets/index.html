@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FPS 테스트</title>
+    <style>
+      /* 보기 편하게 기본 여백 제거 */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      /* 데모용 배경 */
+      .demo {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        font: 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <div>
+        <h1>FPS 모니터 데모</h1>
+        <p>이 페이지는 requestAnimationFrame 기반 FPS 표시를 테스트합니다.</p>
+      </div>
+    </div>
+
+    <script type="module">
+      import fps from "./fps.js";
+
+      // 기본: body에 부착 (좌상단 고정)
+      fps.init();
+
+      // 팁) 우하단에 붙이고 싶다면 fps.js의 create()에서 위치 스타일을 바꿔도 되고,
+      // 아래처럼 DOM 추가 후 스타일을 덮어써도 된다.
+      // setTimeout(() => {
+      //   const panel = document.body.lastElementChild; // 방금 추가된 div
+      //   Object.assign(panel.style, {
+      //     left: 'auto', top: 'auto', right: '10px', bottom: '10px',
+      //     borderRadius: '8px', padding: '6px 8px', fontWeight: '700',
+      //     pointerEvents: 'none', // 클릭 방해 방지
+      //   });
+      // }, 0);
+    </script>
+  </body>
+</html>

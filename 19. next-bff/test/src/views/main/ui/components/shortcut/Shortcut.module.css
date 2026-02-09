@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shortcutCircle {
+  width: 64px;
+  height: 64px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.iconImage {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 80px;
+  word-break: keep-all;
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  position: relative;
+}
+
+.comment {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2px;
+  width: 100%;
+  height: fit-content;
+}
+
+.quote {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+.textSegment {
+  display: inline;
+  line-height: 1.5;
+  word-break: break-word;
+  /* fontSize, color, fontWeight, backgroundColor는 인라인 스타일로 처리 */
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4px;
+}

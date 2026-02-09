@@ -1,0 +1,763 @@
+{
+  "items": [
+    {
+      "uuid": "726e081d-d526-4122-9fac-fd4de4196c7b",
+      "name": "레트로 감성 슬라이드 필름 사진 인화 선물",
+      "image": "https://image.idus.com/image/files/ba44d1bd46984bdb955647e1508bf49d_400.png",
+      "artistUuid": "b822ed7e-8a72-48b0-b2ae-cb2fae055c65",
+      "artistName": "SPEDEAR",
+      "salePrice": 2025,
+      "discountRate": 19,
+      "review": {
+        "count": 162,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "사이즈 은근 커서 마음에 들어요:)\n다음엔 작은 사이즈 구매하려구용",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 1087521
+    },
+    {
+      "uuid": "075703bc-2f02-4eb8-9e6c-381acf0e5033",
+      "name": "초대형 과자봉투 제작 / 가방끈 옵션",
+      "image": "https://image.idus.com/image/files/7d8d24ce14704b6fa1a302164fbd891e_400.jpg",
+      "artistUuid": "d225587f-0bbf-40b4-9c29-effa27632d74",
+      "artistName": "반달콤",
+      "salePrice": 33000,
+      "discountRate": 18,
+      "review": {
+        "count": 386,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "생각보다 빨리 제작되어서 왔어요 조카 생일선물때 주려고 샀어요 ㅎㅎ 많이 좋아할 것 같아요 탄탄하고 내구성 있어요 감사합니당",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 4727114
+    },
+    {
+      "uuid": "25e5e1a5-7a64-4cfc-a2ed-e948607960fc",
+      "name": "🎉설예약특가🎉콩고물가득~대추도라지정과",
+      "image": "https://image.idus.com/image/files/1c2c7c5636c441939a311dbed7adbd50_400.jpg",
+      "artistUuid": "7583a954-ac6a-4dad-b017-4fe1d6b7aa3a",
+      "artistName": "한길로그대로",
+      "salePrice": 11876,
+      "discountRate": 25,
+      "review": {
+        "count": 4210,
+        "rate": 4.8,
+        "rateLabel": "4.8",
+        "contents": "콩고물 고소하고\n도라지 쫀득 달콤 \n마지막맛 약간 쌉싸름\n넘 맛있어요",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 2355696
+    },
+    {
+      "uuid": "f80e407d-658d-4cb9-be64-00ce264cb26c",
+      "name": "🎁새해선물🍯꿀도라지사탕🍯목이편한꿀!답례품생일간식",
+      "image": "https://image.idus.com/image/files/4413a09a1f144cfcb51fb5aadb1d0133_400.jpg",
+      "artistUuid": "624cbfaa-7057-11e4-bb59-06a6fa0000b9",
+      "artistName": "아리감성💕",
+      "salePrice": 13195,
+      "discountRate": 22,
+      "review": {
+        "count": 1629,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "어린이집 선물로 드릴려고 구매해서 먼저 먹어봤는데, 많이 달지도 않고, 약간 호박엿 맛도 나고 맛있어요~\n아이들도 좋아하고 추가 구매 해야겠습니다",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "REPURCHASE",
+          "label": "재구매 많은",
+          "colorFont": "#666666ff",
+          "colorBackground": "#f5f5f5ff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 48334
+    },
+    {
+      "uuid": "fa5a4972-cc4e-4c37-afb8-5ecfcf0e584d",
+      "name": "💗아망드 쇼콜라_4종 시리즈 💗",
+      "image": "https://image.idus.com/image/files/0de8018a5d4843408d8f0fdb43619b1a_400.jpg",
+      "artistUuid": "15ef8a88-adba-419b-9f1a-0afd394dd6ae",
+      "artistName": "초코타임수제초콜릿",
+      "salePrice": 10300,
+      "discountRate": 0,
+      "review": {
+        "count": 126,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "배송 잘받았습니다\n신경써주셔서 감사해요\n덕분에 선물로 잘 드리고왔습니다 ☺️",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 2557892
+    },
+    {
+      "uuid": "7188a42b-d623-48c3-8044-738691528131",
+      "name": "🔥내방안의 작은불멍, 미니어처 화목난로🔥",
+      "image": "https://image.idus.com/image/files/08898e1bea904c1abad2d945bda76601_400.jpg",
+      "artistUuid": "fa918f6b-d4ce-4518-ad69-038cecb26b0b",
+      "artistName": "물고기나무",
+      "salePrice": 67000,
+      "discountRate": 16,
+      "review": {
+        "count": 35,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "김 모락모락 나는 것도 너무 귀엽구 특히 주전자가 진짜 앙증맞아요!",
+        "starFull": true
+      },
+      "badges": [],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 6396774
+    },
+    {
+      "uuid": "dc9e389e-8390-4a34-868c-554fe94f26c6",
+      "name": "[발송일선택] 구움찰떡 ❤️ 겉바속쫀 어른들 인기최고",
+      "image": "https://image.idus.com/image/files/e7e7df17a74d419c8592ce0ba0cc1dc1_400.jpg",
+      "artistUuid": "d7d5547d-7d2e-477c-adec-86260166d1b5",
+      "artistName": "비비케이크",
+      "salePrice": 16380,
+      "discountRate": 18,
+      "review": {
+        "count": 21,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "명절선물 구매하기전에 맛을보려고 작은것으로 구매햇습니다\n해동이 어느정도 되어잇길래 먹어보앗는데 달달해서 맛이 좋더군요 어르신들이 잘 드실 수 있을거 같아 선물예약 주문넣습니다",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 8555289
+    },
+    {
+      "uuid": "111e45ea-68d9-4b63-8aab-8fe425c7a424",
+      "name": "🥇미셰린 셰프의 선택🥇 통째로 갈아만든 생과일 세트",
+      "image": "https://image.idus.com/image/files/c6935d54ad4e40a3939745213ad1aee8_400.jpg",
+      "artistUuid": "80db54b5-4dcc-4c9c-b277-251331b429e8",
+      "artistName": "청숨",
+      "salePrice": 21500,
+      "discountRate": 14,
+      "review": {
+        "count": 65,
+        "rate": 4.8,
+        "rateLabel": "4.8",
+        "contents": "구입한지 얼마되지 않았는데 벌써 절반이상 먹었습니다ㅎㅎ 제형이 생강물에 가까워서 생강차로 타먹었는데 이번 감기에 큰 도움이 됐어요. 집에 있는 모과차와 섞어 먹으니 적당히 달고 쌉쌀해서 생강을 즐기지 않는 가족도 잘 마시더라고요.",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 6148115
+    },
+    {
+      "uuid": "060ddab4-a179-4d0d-97ec-ed4959a3916f",
+      "name": "인기🌿초코프레첼 답례품💝스티커무료제작",
+      "image": "https://image.idus.com/image/files/336a166b4e5e471eb6c9b3e3a1836bf3_400.jpg",
+      "artistUuid": "243ee4de-2b37-4644-a0f2-6d065add3f1d",
+      "artistName": "스윗 코하롱",
+      "salePrice": 3800,
+      "discountRate": 16,
+      "review": {
+        "count": 314,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "포장이 예쁘고, 맛있고, 가격도 다른 곳보다 좋아서 답례품으로 강력추천합니다!😊",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 7980364
+    },
+    {
+      "uuid": "8e6440ed-6a1e-44b9-83a1-4c9db6cdf961",
+      "name": "Romanza로즈유리티컵세트(당일발송)",
+      "image": "https://image.idus.com/image/files/35f9dcc9bf264ffa951fda9c15f9c6cf_400.jpg",
+      "artistUuid": "9b1f4c93-c21e-4e81-98c2-a5c326e41e57",
+      "artistName": "세라믹페인터일",
+      "salePrice": 29000,
+      "discountRate": 40,
+      "review": {
+        "count": 72,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "택배박스 파손으로 제품상태 걱정했는데 포장상태보고 너무 안심했습니다! 깨진곳 없이 선물 받으신 분이 너무 좋아하셔서 너무 감사합니다!",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 1622264
+    },
+    {
+      "uuid": "54d8cc9d-ae68-49e3-819c-0eff45f518c8",
+      "name": "오늘행성시리즈🌏해왕성 스칸디아모스 화분 개업 선물",
+      "image": "https://image.idus.com/image/files/a221f5561bd94a37ad1c66bcd82c1ac2_400.jpg",
+      "artistUuid": "e95f7c86-542e-463d-b80c-6426b7cc790f",
+      "artistName": "오늘기분",
+      "salePrice": 33000,
+      "discountRate": 11,
+      "review": {
+        "count": 106,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "새롭고 색감이 예뻐서 선물 받으시는 분이 좋아하셨어요:)",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 4319757
+    },
+    {
+      "uuid": "196e9065-193c-4fb2-954a-a1faeebf171d",
+      "name": "설날선물사전예약/앙금쿠키/상견례선물/새해선물/쿠키선물",
+      "image": "https://image.idus.com/image/files/4bd33512097b496484fb22b7632277f5_400.jpg",
+      "artistUuid": "561b8a4a-8368-4f60-9687-e113bddfea57",
+      "artistName": "플로레아",
+      "salePrice": 44590,
+      "discountRate": 17,
+      "review": {
+        "count": 25,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "너무 예뻐서 먹기 힘들정도였어요 💖ㅎㅎ 포장도 너무 예뿌고 중요한건 맛도 너무 좋았어요!! 선물받으신분도 너무 좋아하셔서 뿌듯했습니다.다음에 선물용으로 또 구매할께요💖",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 7252635
+    },
+    {
+      "uuid": "d80017ee-c1f0-4481-a3c7-9aee787d5c28",
+      "name": "을사년 한복입은 푸른뱀 쿠키[새해, 신년선물]",
+      "image": "https://image.idus.com/image/files/2aec8f8c2e2e47da938527b9ec08318e_400.jpg",
+      "artistUuid": "363ae59a-9e2b-4afc-9c6f-05075f655444",
+      "artistName": "소드락이",
+      "salePrice": 1215,
+      "discountRate": 19,
+      "review": {
+        "count": 21,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "선물 받은 분이 정말 좋아하셨어여 포장도 넘 예쁘고 감사합니다",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 4370428
+    },
+    {
+      "uuid": "4941a873-26ba-4cb4-8a06-cddc32074b55",
+      "name": "H001 바이딥톤 트리솝",
+      "image": "https://image.idus.com/image/files/e1f146678b8b407598d3323f92dafc7d_400.jpg",
+      "artistUuid": "9ba5c919-ce2f-4c22-93c0-36c017dc22d8",
+      "artistName": "바이딥톤",
+      "salePrice": 8691,
+      "discountRate": 21,
+      "review": {
+        "count": 35,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "두 개 사서 하나는 친구 집들이 선물로 주었어요! \n예쁜 비누라 케이스 사기 전엔 까지 않겠다며 말하는 모습이 기분이 좋았네요 ㅎㅎ",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#009ee7ff",
+        "labels": [
+          {
+            "types": ["BOLD"],
+            "text": "설 특가",
+            "colorFont": "#fffce3ff",
+            "size": 11
+          }
+        ]
+      },
+      "artistId": 4375966
+    },
+    {
+      "uuid": "b885a3ef-3ff8-49c9-8ac1-43971cafad4e",
+      "name": "눈꽃비누 크리스마스포장 연말선물 답례품추천",
+      "image": "https://image.idus.com/image/files/6516531e14c14afdb33925ad3d3642c1_400.jpg",
+      "artistUuid": "43871dbb-0315-4393-b6eb-1f9f0c31cc25",
+      "artistName": "메이지아아뜰리에",
+      "salePrice": 4095,
+      "discountRate": 26,
+      "review": {
+        "count": 122,
+        "rate": 4.9,
+        "rateLabel": "4.9",
+        "contents": "원하는 디자인은 아니었지만 그래도 향이 너무 좋아요",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 2239915
+    },
+    {
+      "uuid": "e7a5c72e-5df0-42c0-925b-506d144f6873",
+      "name": "[idus단독]음성을 전하는 카세트 앨범📻 음성 편지",
+      "image": "https://image.idus.com/image/files/2b2f0d57a6dd418daae5a26e937d7fda_400.jpg",
+      "artistUuid": "b822ed7e-8a72-48b0-b2ae-cb2fae055c65",
+      "artistName": "SPEDEAR",
+      "salePrice": 12649,
+      "discountRate": 20,
+      "review": {
+        "count": 441,
+        "rate": 4.8,
+        "rateLabel": "4.8",
+        "contents": "정말 예뻐요! 디자인도 너무 예쁘고, 녹음했을 때 약간 치지직하는 느낌이 좋은 분위기를 만들어줘서 더 느낌있고, 예뻐요. 가격도 비싸지도 않고, 제품 분위기에 느낌까지 전부 하나부터 열까지 만족이에요. 아내도 너무너무 좋아하더라고요. 이벤트 고민하시는 분 적극 추천드립니다!!\n그리고 말하다보면 90초도 짧은 느낌이라 60초보단 90초 적극 추천입니다!!\n애인에게 예쁜 추억, 선물 원하시는 분은 적극 강추요!💛",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "살수록할인",
+          "colorFont": "#5f77a4ff",
+          "colorBackground": "#f5f7ffff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 1087521
+    },
+    {
+      "uuid": "a97a7e74-c4e6-42d9-97ed-7d0006dad8d1",
+      "name": "🧸[강력추천] 생과일 모찌🍓🍊🥝🫒🍍",
+      "image": "https://image.idus.com/image/files/db0ed2434f194f22a5e08f727abf2dd4_400.jpg",
+      "artistUuid": "25130dcf-575d-4746-af5b-e2ca06611a4e",
+      "artistName": "배방제과",
+      "salePrice": 4300,
+      "discountRate": 4,
+      "review": {
+        "count": 9,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "달달하고 맛있네요\n디저트로 먹기에 좋아요\n딸기가 싱싱하고 큼직해요\n쫀득하고 팥이랑 조합이 좋아서 맛있어요",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "NEW",
+          "colorFont": "#666666ff",
+          "colorBackground": "#f5f5f5ff",
+          "image": null
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 8842781
+    },
+    {
+      "uuid": "190346b4-6781-405b-ab7e-fb2afeb39734",
+      "name": "☁️마블링 잔☁️🍷 6 colors",
+      "image": "https://image.idus.com/image/files/5ad5055835464009b1c0a239c046fbfe_400.jpg",
+      "artistUuid": "1275e530-db0f-44b0-bea2-58ed36d9308e",
+      "artistName": "유리풀 Yuriful",
+      "salePrice": 17472,
+      "discountRate": 21,
+      "review": {
+        "count": 8,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "선물로 구매했어요ㅡ 제가 직접 구매해서 고르려다가 ㅋㅋㅋㅋ 컬러가 다 이뻐서 ㅠㅠ 선택권을.넘김 ㅋㅋㅋ ㅠ 엄청 이뿌다는.후기를 받았어용!",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "special",
+          "colorFont": "#ef7014ff",
+          "colorBackground": "#fff7f2ff",
+          "image": "https://cdn.idus.kr/static/common/images/20230608/080508_special_logo.png"
+        },
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 495098
+    },
+    {
+      "uuid": "cda0d103-f5c8-4467-8a97-6ee2097d4d08",
+      "name": "재주좋아 손비누 3종",
+      "image": "https://image.idus.com/image/files/5af139e8a8234824865062ead79825b9_400.jpg",
+      "artistUuid": "8fc70305-9e10-4640-9d7f-954502eb6240",
+      "artistName": "아토르[atour]",
+      "salePrice": 7200,
+      "discountRate": 10,
+      "review": {
+        "count": 826,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "몇 년 전에 구매하고 정말 오랜만에 찾아왔는데도 여전히 변함없이 좋은 작품이네요☺ 감사한 분들께 부담없이 받으실 수 있도록 소소하게 선물 챙겨드릴 때에 너무 좋은 것 같아요. 지난 번에도 이번에도 받는 분들이 너무 좋아하셨습니다ㅎㅎ 또 찾아올게요~🥰",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 4465242
+    },
+    {
+      "uuid": "a86fe2a7-991f-403e-b144-783db6e6f427",
+      "name": "다섯가지 전통한과 오색과일강정  수제쌀강정 설선물",
+      "image": "https://image.idus.com/image/files/8ba0a550cb6345edb67ce660f6f63b95_400.jpg",
+      "artistUuid": "a53a5a54-dbc4-4ebf-bffc-7255b786849f",
+      "artistName": "정담",
+      "salePrice": 7900,
+      "discountRate": 0,
+      "review": {
+        "count": 10,
+        "rate": 5,
+        "rateLabel": "5.0",
+        "contents": "정말 만족해요! 특별한 날, 존경과 감사의 의미로 드리기에 알맞은 선물같아요! 가격대도 받는 입장에서 그리고 주는 입장에서도 부담스럽지 않고, 무엇보다 이쁘고 맛도 좋아서 좋아서 정성이 느껴지는 선물을 드리고 싶으신 분께 강하게 추천드립니다!! 이제 곧 다가오는 설날, 아이디어스에서 무엇을 사는 게 좋을까, 고민하시는 분이 계시다면 이제 더이상 고민할 필요없이, 그냥 편하게 믿고 구매하세요👍 후회 안 하실 거예요☺️",
+        "starFull": true
+      },
+      "badges": [
+        {
+          "displayType": "RECTANGLE",
+          "label": "쿠폰",
+          "colorFont": "#ff4b50ff",
+          "colorBackground": "#fff2f4ff",
+          "image": null
+        }
+      ],
+      "promotion": {
+        "colorBackground": "#00000099",
+        "labels": []
+      },
+      "artistId": 9138235
+    }
+  ],
+  "pagination": {
+    "total": 3,
+    "current": 3,
+    "pageSize": 20,
+    "itemSize": 60
+  }
+}
